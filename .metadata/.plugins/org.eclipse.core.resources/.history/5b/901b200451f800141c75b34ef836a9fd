@@ -1,0 +1,19 @@
+package br.com.veiculo;
+
+public class Veiculo {
+	
+	private String chassi;
+	private String montadora;
+	private String modelo;
+	private float motorizacao;
+	private float preco;
+	
+	public Veiculo(String chassi, String montadora, String modelo, float motorizacao, float preco) {
+		this.chassi = chassi;
+		this.montadora = montadora;
+		this.modelo = modelo;
+		this.motorizacao = motorizacao;
+		this.preco = preco;
+	}
+
+}

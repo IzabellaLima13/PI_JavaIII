@@ -1,0 +1,34 @@
+package br.com.veiculo.motocicleta;
+
+import br.com.veiculo.Veiculo;
+
+public class Motocicleta extends Veiculo {
+
+	private int capacidadeTanque;
+	private Integer cilindradas;
+	
+	public Motocicleta(String chassi, String montadora, String modelo,
+			float motorizacao, float preco, int capacidadeTanque, Integer cilindradas) {
+		super(chassi, montadora, modelo, motorizacao, preco);
+		this.capacidadeTanque = capacidadeTanque;
+		this.cilindradas = cilindradas;
+	}
+
+	public int getCapacidadeTanque() {
+		return capacidadeTanque;
+	}
+
+	public void setCapacidadeTanque(int capacidadeTanque) {
+		this.capacidadeTanque = capacidadeTanque;
+	}
+
+	public Integer getCilindradas() {
+		return cilindradas;
+	}
+
+	public void setCilindradas(Integer cilindradas) {
+		this.cilindradas = cilindradas;
+	}
+
+		
+}

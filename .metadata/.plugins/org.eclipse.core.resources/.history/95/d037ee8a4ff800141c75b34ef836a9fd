@@ -1,0 +1,81 @@
+package Motocicleta;
+
+public class Motocicleta {
+
+	private String chassi;
+	private String montadora;
+	private String modelo;
+	private float motorizacao;
+	private float preco;
+	private int capacidadeTanque;
+	private Integer cilindradas;
+	
+	public Motocicleta(String chassi, String montadora, String modelo,
+			float motorização, float preço, int capacidade_tanque, Integer cilindradas) {
+		super();
+		Chassi = chassi;
+		Montadora = montadora;
+		Modelo = modelo;
+		Motorização = motorização;
+		Preço = preço;
+		Capacidade_Tanque = capacidade_tanque;
+		Cilindradas = cilindradas;
+	}
+
+	public String getChassi() {
+		return Chassi;
+	}
+
+	public void setChassi(String chassi) {
+		Chassi = chassi;
+	}
+
+	public String getMontadora() {
+		return Montadora;
+	}
+
+	public void setMontadora(String montadora) {
+		Montadora = montadora;
+	}
+
+	public String getModelo() {
+		return Modelo;
+	}
+
+	public void setModelo(String modelo) {
+		Modelo = modelo;
+	}
+
+	public float getMotorização() {
+		return Motorização;
+	}
+
+	public void setMotorização(float motorização) {
+		Motorização = motorização;
+	}
+
+	public float getPreço() {
+		return Preço;
+	}
+
+	public void setPreço(float preço) {
+		Preço = preço;
+	}
+
+	public int getCapacidade_Tanque() {
+		return Capacidade_Tanque;
+	}
+
+	public void setCapacidade_Tanque(int capacidade_Tanque) {
+		Capacidade_Tanque = capacidade_Tanque;
+	}
+
+	public Integer getCilindradas() {
+		return Cilindradas;
+	}
+
+	public void setCilindradas(Integer cilindradas) {
+		Cilindradas = cilindradas;
+	}
+	
+}

@@ -1,0 +1,26 @@
+package br.com.veiculo.motocicleta;
+
+public class Motocicleta {
+
+	private String chassi;
+	private String montadora;
+	private String modelo;
+	private float motorizacao;
+	private float preco;
+	private int capacidadeTanque;
+	private Integer cilindradas;
+	
+	public Motocicleta(String chassi, String montadora, String modelo,
+			float motorizacao, float preco, int capacidadeTanque, Integer cilindradas) {
+		super();
+		this.chassi = chassi;
+		this.montadora = montadora;
+		this.modelo = modelo;
+		this.motorizacao = motorizacao;
+		this.preco = preco;
+		this.capacidadeTanque = capacidadeTanque;
+		this.cilindradas = cilindradas;
+	}
+
+		
+}

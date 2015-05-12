@@ -1,0 +1,85 @@
+package br.com.main;
+import java.util.Scanner;
+
+import br.com.loja.Loja;
+import br.com.veiculo.carro.Carro;
+import br.com.veiculo.motocicleta.Motocicleta;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scan = new Scanner(System.in);
+		int numeroDigitado;
+		Carro carro = null;
+		Motocicleta motocicleta = null;
+		Loja loja = new Loja();
+		
+		String chassi  = "";
+		String montadora = "";
+		String modelo = "";
+		float motorizacao = 0;
+		float preco = 0;
+		int capacidadeTanque = 0;
+		int cilindradas = 0;
+		
+		System.out.println("Digite a opção desejada");
+		System.out.println("[0] - Sair");
+		System.out.println("[1] - Inserir Carro");
+		System.out.println("[2] - Inserir Moto");
+		System.out.println("[3] - ");
+		System.out.println("[4] - ");
+		
+		
+		numeroDigitado = scan.nextInt();
+		
+		
+		switch(numeroDigitado){
+		
+		case 1:
+			System.out.println("Digite o chassi => ");
+			chassi  = scan.nextLine();
+			System.out.println("Digite a montadora => ");
+			montadora = scan.nextLine();
+			System.out.println("Digite o modelo => ");
+			modelo = scan.nextLine();
+			System.out.println("Digite a montorizacao => ");
+			motorizacao = scan.nextFloat();
+			System.out.println("Digite o preco => ");
+			preco = scan.nextFloat();
+			
+			carro = new Carro(chassi, montadora, modelo, motorizacao, preco);
+			
+			loja.listaDeCarros.add(carro);
+			
+		case 2:
+			System.out.println("Digite o chassi => ");
+			chassi  = scan.nextLine();
+			System.out.println("Digite a montadora => ");
+			montadora = scan.nextLine();
+			System.out.println("Digite o modelo => ");
+			modelo = scan.nextLine();
+			System.out.println("Digite a montorizacao => ");
+			motorizacao = scan.nextFloat();
+			System.out.println("Digite o preco => ");
+			preco = scan.nextFloat();
+			System.out.println("Digite a capacidade do tanque => ");
+			preco = scan.nextInt();
+			System.out.println("Digite a cilindrada => ");
+			preco = scan.nextInt();
+			
+			motocicleta = new Motocicleta(chassi, montadora, modelo, motorizacao, preco, capacidadeTanque, cilindradas);
+			
+			
+		case 3:
+			
+		case 4:
+			
+		
+		}
+
+	}
+
+}

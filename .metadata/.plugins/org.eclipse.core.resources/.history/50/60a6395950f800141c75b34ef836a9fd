@@ -1,0 +1,7 @@
+package br.com.veiculo.carro;
+
+public enum Cambio {
+	//tipo de cambio
+	
+	AUTOMÁTICO, SEMI_AUTOMÁTICO, MANUAL;
+}

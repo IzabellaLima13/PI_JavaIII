@@ -1,0 +1,27 @@
+package Carro;
+
+public class Carro {
+	
+	private String chassi;
+	private String montadora;
+	private String modelo;
+	private float motorizacao;
+	private float preco;
+	
+	public Carro(String chassi, String montadora, String modelo,
+			float motorizacao, float preco) {
+		super();
+		this.chassi = chassi;
+		this.montadora = montadora;
+		Modelo = modelo;
+		Motorização = motorização;
+		Preço = preço;
+	}
+	
+	
+	
+	
+	
+	
+
+}
