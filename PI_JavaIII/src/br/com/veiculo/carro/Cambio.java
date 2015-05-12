@@ -1,5 +1,6 @@
 package br.com.veiculo.carro;
 
-public enum Cambio {	
+public enum Cambio {
+	
 	AUTOMÁTICO, SEMI_AUTOMÁTICO, MANUAL;
 }

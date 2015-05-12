@@ -1,5 +1,4 @@
 package br.com.veiculo.carro;
-
 import br.com.veiculo.Veiculo;
 
 public class Carro extends Veiculo {

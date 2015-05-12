@@ -54,8 +54,6 @@ public class Veiculo {
 
 	public void setPreco(float preco) {
 		this.preco = preco;
-	}
-	
-	
+	}	
 
 }

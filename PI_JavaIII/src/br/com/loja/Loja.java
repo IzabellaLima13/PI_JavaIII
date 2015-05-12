@@ -13,7 +13,6 @@ public class Loja {
 		public List<Motocicleta> listaDeMotocicletas = new ArrayList<Motocicleta>();
 
 		
-		
 		public String getEndereço() {
 			return Endereço;
 		}

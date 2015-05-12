@@ -28,7 +28,5 @@ public class Motocicleta extends Veiculo  {
 
 	public void setCilindradas(Integer cilindradas) {
 		this.cilindradas = cilindradas;
-	}
-
-		
+	}		
 }
