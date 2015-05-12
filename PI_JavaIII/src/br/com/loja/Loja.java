@@ -1,15 +1,16 @@
-package Loja;
+package br.com.loja;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import Carro.Carro;
-import Motocicleta.Motocicleta;
+import br.com.veiculo.carro.Carro;
+import br.com.veiculo.motocicleta.Motocicleta;
 
 public class Loja {
 		private String Endereço;
 		private String Nome;
-		private List<Carro> listaDeCarros;
-		private List<Motocicleta> listaDeMotocicletas;
+		public List<Carro> listaDeCarros = new ArrayList<Carro>();
+		public List<Motocicleta> listaDeMotocicletas = new ArrayList<Motocicleta>();
 
 		
 		

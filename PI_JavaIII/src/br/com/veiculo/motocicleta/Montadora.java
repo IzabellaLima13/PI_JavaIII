@@ -1,4 +1,4 @@
-package Motocicleta;
+package br.com.veiculo.motocicleta;
 
 public enum Montadora {
 	

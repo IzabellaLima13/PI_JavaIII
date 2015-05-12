@@ -1,4 +1,4 @@
-package Carro;
+package br.com.veiculo.carro;
 
 public enum Cores {
 	
