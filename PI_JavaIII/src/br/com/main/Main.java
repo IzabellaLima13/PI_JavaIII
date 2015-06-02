@@ -1,42 +1,29 @@
 package br.com.main;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import br.com.loja.Loja;
-import br.com.veiculo.carro.Carro;
-import br.com.veiculo.motocicleta.Motocicleta;
+import br.com.veiculo.Veiculo;
 
 
 public class Main {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		
+		Loja Bacon = new Loja();
 		
 		Scanner scan = new Scanner(System.in);
-		int numeroDigitado = 0;
-		Carro carro = null;
-		Motocicleta motocicleta = null;
-		Loja loja = new Loja();
 		
-		String chassi  = "";
-		String montadora = "";
-		String modelo = "";
-		float motorizacao = 0;
-		float preco = 0;
-		int capacidadeTanque = 0;
-		int cilindradas = 0;
-		
-		do {
-			
+	
 			System.out.println("Digite a opção desejada");
 			System.out.println("[0] - Sair");
-			System.out.println("[1] - Inserir Carro");
-			System.out.println("[2] - Inserir Moto");
-			System.out.println("[3] - ");
-			System.out.println("[4] - ");
+			System.out.println("[1] - Inserir Veiculo");
+			System.out.println("[2] - Buscar por chassi ");
+			System.out.println("[3] - Pesquisar veiculos atraves de parametros");
+			System.out.println("[4] - Listar veiculos");
+			System.out.println("");
 			
 			
-			numeroDigitado = scan.nextInt();
+			 int numeroDigitado = scan.nextInt();
 			
 			
 			switch(numeroDigitado){
@@ -46,81 +33,21 @@ public class Main {
 				break;
 			
 			case 1:
-				carro = adicionarCarro(scan, chassi, montadora, modelo, motorizacao, preco);
-				loja.listaDeCarros.add(carro);
+				Veiculo auto = new Veiculo();
+				Bacon.listaDeVeiculos.add(auto);
 				break;
 				
 			case 2:
-				motocicleta = adicionarMotociceta(scan, chassi, montadora, modelo, motorizacao, preco, capacidadeTanque, cilindradas);
-				loja.listaDeMotocicletas.add(motocicleta);
-				break;
-				
+				Bacon.buscarVeiculo();
 			case 3:
-				
+				Bacon.pesquisarVeiculo();
 			case 4:
-				
+				Bacon.listarVeiculos();
 				
 			}
 			
-		} while (numeroDigitado != 0);	
+		}
 		
 
 	}
-	
-	public static Carro adicionarCarro(Scanner scan, String chassi, String montadora, String modelo, float motorizacao, float preco) throws Exception{
-		
-		try {
-			
-			System.out.println("Digite o chassi => \n");
-			chassi  = scan.next();
-			System.out.println("Digite a montadora => ");
-			montadora = scan.next();
-			System.out.println("Digite o modelo => ");
-			modelo = scan.next();
-			System.out.println("Digite a montorizacao => ");
-			motorizacao = scan.nextFloat();
-			System.out.println("Digite o preco => ");
-			preco = scan.nextFloat();
-			
-			Carro carro = new Carro(chassi, montadora, modelo, motorizacao, preco);
-			
-			return carro;
-			
-		} catch (InputMismatchException e) {
-			throw new Exception(e + " ******Valor Digitado invalido******");
-		} catch (Exception e) {
-			throw e;
-		}
-	}
-	
-	public static Motocicleta adicionarMotociceta(Scanner scan, String chassi, String montadora, String modelo, float motorizacao, float preco, int capacidadeTanque, int cilindradas) throws Exception{
-		
-		try {
-			
-			System.out.println("Digite o chassi => ");
-			chassi  = scan.next();
-			System.out.println("Digite a montadora => ");
-			montadora = scan.next();
-			System.out.println("Digite o modelo => ");
-			modelo = scan.next();
-			System.out.println("Digite a montorizacao => ");
-			motorizacao = scan.nextFloat();
-			System.out.println("Digite o preco => ");
-			preco = scan.nextFloat();
-			System.out.println("Digite a capacidade do tanque => ");
-			capacidadeTanque = scan.nextInt();
-			System.out.println("Digite a cilindrada => ");
-			cilindradas = scan.nextInt();
-			
-			Motocicleta motocicleta = new Motocicleta(chassi, montadora, modelo, motorizacao, preco, capacidadeTanque, cilindradas);
-			
-			
-			return motocicleta;
-			
-		} catch (InputMismatchException e) {
-			throw new Exception(e + " ******Valor Digitado invalido******");
-		} catch (Exception e) {
-			throw e;
-		} 
-	}
-}
+

@@ -1,18 +1,45 @@
 package br.com.veiculo;
 
-public class Veiculo {
+import java.util.HashMap;
+
+import br.com.auxiliar.Auxiliar;
+
+public class Veiculo 
+{
 	
-	private String chassi;
-	private String montadora;
-	private String modelo;
-	private float motorizacao;
 	private float preco;
+	private String chassi;
+	private HashMap<String, Enum> mapa;
 	
-	public Veiculo(String chassi, String montadora, String modelo, float motorizacao, float preco) {
-		this.chassi = chassi;
-		this.montadora = montadora;
-		this.modelo = modelo;
-		this.motorizacao = motorizacao;
+	public Veiculo()
+	{
+		 mapa = new HashMap<String,Enum>();
+		 
+		 mapa.put("TipoVeiculo",Auxiliar.addTipoVeiculo());
+		 
+		 if(mapa.containsValue(TipodeVeiculo.CARRO))
+		 {
+			 mapa.put("Cambio", Auxiliar.addCambio());
+			 mapa.put("Motorizacao",Auxiliar.addMotorizacao());
+		 }
+		 else if(mapa.containsValue(TipodeVeiculo.MOTO))
+		 {
+			 mapa.put("Cilindrada", Auxiliar.addCilindrada());
+			 mapa.put("CapTanque",Auxiliar.addCaptanque());
+		 }	 
+		 mapa.put("Cores",Auxiliar.addCor());
+		 mapa.put("Modelo",Auxiliar.addModelo());
+		 mapa.put("montadoras",Auxiliar.addMontadora());
+		 mapa.put("Tipo",Auxiliar.addTipo());
+		 
+		 setPreco(Auxiliar.addPreco());
+		 setChassi(Auxiliar.addChassi());
+	}
+	public float getPreco() {
+		return preco;
+	}
+
+	public void setPreco(float preco) {
 		this.preco = preco;
 	}
 
@@ -24,36 +51,14 @@ public class Veiculo {
 		this.chassi = chassi;
 	}
 
-	public String getMontadora() {
-		return montadora;
+	public HashMap<String, Enum> getMapa() {
+		return mapa;
 	}
 
-	public void setMontadora(String montadora) {
-		this.montadora = montadora;
+	public void setMapa(String x, Enum y) {
+		this.mapa.put(x,y);
 	}
-
-	public String getModelo() {
-		return modelo;
-	}
-
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-
-	public float getMotorizacao() {
-		return motorizacao;
-	}
-
-	public void setMotorizacao(float motorizacao) {
-		this.motorizacao = motorizacao;
-	}
-
-	public float getPreco() {
-		return preco;
-	}
-
-	public void setPreco(float preco) {
-		this.preco = preco;
-	}	
-
+	
+	
+	
 }

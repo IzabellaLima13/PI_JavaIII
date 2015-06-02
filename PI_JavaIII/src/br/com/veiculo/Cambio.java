@@ -1,4 +1,4 @@
-package br.com.veiculo.carro;
+package br.com.veiculo;
 
 public enum Cambio {
 	
