@@ -15,9 +15,13 @@ public class Loja {
 		{
 			ArrayList<Veiculo> listaDeVeiculos = new ArrayList<>();
 		}
+<<<<<<< HEAD
 		
 		
 		public void localizarVeiculo()
+=======
+		public void buscarVeiculo()
+>>>>>>> origin/master
 		{
 			String aux = Auxiliar.addChassi();
 			
@@ -29,7 +33,11 @@ public class Loja {
 				}
 			}
 		}
+<<<<<<< HEAD
 		public void imprimirVeiculos()
+=======
+		public void listarVeiculos()
+>>>>>>> origin/master
 		{
 			for(Veiculo x : listaDeVeiculos)
 			{
@@ -63,15 +71,25 @@ public class Loja {
 			switch(opcao)
 			{
 			case 1:
+<<<<<<< HEAD
 				abc.setMapa("Tipo  de Veiculo", Auxiliar.addTipoVeiculo());break;
 			case 2:
 				abc.setMapa("Capacidade de Tanque", Auxiliar.addCaptanque());break;
+=======
+				abc.setMapa("TipoVeiculo", Auxiliar.addTipoVeiculo());break;
+			case 2:
+				abc.setMapa("CapTanque", Auxiliar.addCaptanque());break;
+>>>>>>> origin/master
 			case 3:
 				abc.setMapa("Cilindrada", Auxiliar.addCilindrada());break;
 			case 4:
 				abc.setMapa("Cambio", Auxiliar.addCambio());break;
 			case 5:
+<<<<<<< HEAD
 				abc.setMapa("Motorização", Auxiliar.addMotorizacao());break;
+=======
+				abc.setMapa("Motorizacao", Auxiliar.addMotorizacao());break;
+>>>>>>> origin/master
 			case 6:
 				abc.setMapa("Cor", Auxiliar.addCor());break;
 			case 7:
@@ -79,11 +97,19 @@ public class Loja {
 			case 8:
 				abc.setMapa("Montadora", Auxiliar.addMontadora());break;
 			case 9:
+<<<<<<< HEAD
 				abc.setMapa("Tipo de veiculo", Auxiliar.addTipo());break;
 			case 10:
 				abc.setMapa("Modelo de veiculo", Auxiliar.addModelo());break;
 			case 0:
 				System.out.println("Fim!");break;
+=======
+				abc.setMapa("Tipo", Auxiliar.addTipo());break;
+			case 10:
+				abc.setMapa("Modelo", Auxiliar.addModelo());break;
+			case 0:
+				System.out.println("Yippee ki-yay, motherfucker!");break;
+>>>>>>> origin/master
 			default:
 				System.out.println("Opção inválida. Escolha uma das opções listadas.");
 				break;

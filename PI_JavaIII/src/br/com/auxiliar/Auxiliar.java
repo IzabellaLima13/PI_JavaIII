@@ -90,6 +90,7 @@ public class Auxiliar
 		Cambio aux = null;
 		while(!loop)
 		{
+<<<<<<< HEAD
 			try
 			{
 				System.out.println("Digite numero correspondente ao cambio:AUTOMÁTICO(0), SEMI_AUTOMÁTICO(1), MANUAL(2)");
@@ -108,6 +109,18 @@ public class Auxiliar
 			{
 				System.out.println("Erro, digite algo valido");
 				}
+=======
+			try{
+				System.out.println("Digite numero correspondente ao cambio:AUTOMÁTICO(0), SEMI_AUTOMÁTICO(1), MANUAL(2)");
+				aux = Cambio.values()[Integer.parseInt(scan.nextLine())];
+				loop = true;}
+			catch(InputMismatchException ime){
+				System.out.println("Erro, voce digitou algo diferente de um numero");}
+			catch(ArrayIndexOutOfBoundsException aio){
+				System.out.println("Erro, favor digitar um numero válido");}
+			catch(NumberFormatException nfe){
+				System.out.println("Erro, digite algo valido");}
+>>>>>>> origin/master
 		}loop = false;
 		return aux;
 	}
@@ -116,6 +129,7 @@ public class Auxiliar
 		Montadora aux = null;
 		while(!loop)
 		{
+<<<<<<< HEAD
 			try
 			{
 				System.out.println("Digite numero correspondente à montadora: YAMAHA(0), HARLEY(1), FIAT(2), RENAULT(3)");
@@ -134,6 +148,18 @@ public class Auxiliar
 			{
 				System.out.println("Erro, digite algo valido");
 				}
+=======
+			try{
+				System.out.println("Digite numero correspondente à montadora: YAMAHA(0), HARLEY(1), FIAT(2), RENAULT(3)");
+				aux = Montadora.values()[Integer.parseInt(scan.nextLine())];
+				loop = true;}
+			catch(InputMismatchException ime){
+				System.out.println("Erro, voce digitou algo diferente de um numero");}
+			catch(ArrayIndexOutOfBoundsException aiobe){
+				System.out.println("Erro, favor digitar um numero válido");}
+			catch(NumberFormatException nfe){
+				System.out.println("Erro, digite algo valido");}
+>>>>>>> origin/master
 		}loop = false;
 		return aux;
 	}
@@ -142,6 +168,7 @@ public class Auxiliar
 		Tipo aux = null;
 		while(!loop)
 		{
+<<<<<<< HEAD
 			try
 			{
 				System.out.println("Digite numero do tipo: UNO(0), DUSTER(1), CELTA(2), S200(3), SUPERCHARGER(4), BACON3(5)");
@@ -160,6 +187,18 @@ public class Auxiliar
 			{
 				System.out.println("Erro, digite algo valido");
 				}
+=======
+			try{
+				System.out.println("Digite numero do tipo: UNO(0), DUSTER(1), CELTA(2), S200(3), SUPERCHARGER(4), BACON3(5)");
+				aux = Tipo.values()[Integer.parseInt(scan.nextLine())];
+				loop = true;}
+			catch(InputMismatchException ime){
+				System.out.println("Erro, voce digitou algo diferente de um numero");}
+			catch(ArrayIndexOutOfBoundsException aiobe){
+				System.out.println("Erro, favor digitar um numero válido");}
+			catch(NumberFormatException nfe){
+				System.out.println("Erro, digite algo valido");}
+>>>>>>> origin/master
 		}loop = false;
 		return aux;
 	}
@@ -168,6 +207,7 @@ public class Auxiliar
 		Motorizacao aux = null;
 		while(!loop)
 		{
+<<<<<<< HEAD
 			try
 			{
 				System.out.println("Digite numero do motor: M1(0), M2(1), M3(2)");
@@ -186,6 +226,18 @@ public class Auxiliar
 			{
 				System.out.println("Erro, digite algo valido");
 				}
+=======
+			try{
+				System.out.println("Digite numero do motor: M1(0), M2(1), M3(2)");
+				aux = Motorizacao.values()[Integer.parseInt(scan.nextLine())];
+				loop = true;}
+			catch(InputMismatchException ime){
+				System.out.println("Erro, voce digitou algo diferente de um numero");}
+			catch(ArrayIndexOutOfBoundsException aiobe){
+				System.out.println("Erro, favor digitar um numero válido");}
+			catch(NumberFormatException nfe){
+				System.out.println("Erro, digite algo valido");}
+>>>>>>> origin/master
 		}loop = false;
 		return aux;
 	}
@@ -194,6 +246,7 @@ public class Auxiliar
 		float aux=0;
 		while(!loop)
 		{
+<<<<<<< HEAD
 			try
 			{
 				System.out.println("Digite o preço do carro");
@@ -208,6 +261,16 @@ public class Auxiliar
 			{
 				System.out.println("Erro, digite algo valido");
 				}
+=======
+			try{
+				System.out.println("Digite o preço do carro");
+				aux = scan.nextFloat();
+				loop = true;}
+			catch(InputMismatchException ime){
+				System.out.println("Erro, favor digitar um numero válido");}
+			catch(NumberFormatException nfe){
+				System.out.println("Erro, digite algo valido");}
+>>>>>>> origin/master
 		}loop = false;
 		return aux;
 	}
@@ -222,6 +285,7 @@ public class Auxiliar
 				aux = Cilindrada.values()[Integer.parseInt(scan.nextLine())];
 				loop = true;
 			}
+<<<<<<< HEAD
 			catch(InputMismatchException ime)
 			{
 				System.out.println("Erro, voce digitou algo diferente de um número");
@@ -234,6 +298,14 @@ public class Auxiliar
 			{
 				System.out.println("Erro, digite algo valido");
 				}
+=======
+			catch(InputMismatchException ime){
+				System.out.println("Erro, voce digitou algo diferente de um número");}
+			catch(ArrayIndexOutOfBoundsException aio){
+				System.out.println("Erro, favor digitar um número válido");}
+			catch(NumberFormatException nfe){
+				System.out.println("Erro, digite algo valido");}
+>>>>>>> origin/master
 		}loop = false;
 		return aux;
 	}
@@ -248,6 +320,7 @@ public class Auxiliar
 				aux = CapTanque.values()[Integer.parseInt(scan.nextLine())];
 				loop = true;
 			}
+<<<<<<< HEAD
 			catch(InputMismatchException ime)
 			{
 				System.out.println("Erro, caractere inválido");
@@ -258,6 +331,14 @@ public class Auxiliar
 			catch(NumberFormatException nfe){
 				System.out.println("Erro, insira novamente");
 				}
+=======
+			catch(InputMismatchException ime){
+				System.out.println("Erro, caractere inválido");}
+			catch(ArrayIndexOutOfBoundsException aio){
+				System.out.println("Erro, digite novamente!");}
+			catch(NumberFormatException nfe){
+				System.out.println("Erro, insira novamente");}
+>>>>>>> origin/master
 		}loop = false;
 		return aux;
 	}
