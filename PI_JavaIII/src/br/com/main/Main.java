@@ -16,10 +16,10 @@ public class Main {
 	
 			System.out.println("Digite a opção desejada");
 			System.out.println("[0] - Sair");
-			System.out.println("[1] - Inserir Veiculo");
-			System.out.println("[2] - Buscar por chassi ");
-			System.out.println("[3] - Pesquisar veiculos atraves de parametros");
-			System.out.println("[4] - Listar veiculos");
+			System.out.println("[1] - Inserir Veiculo novo");
+			System.out.println("[2] - Buscar por chassi de veiculo ");
+			System.out.println("[3] - Pesquisar veiculos por parametros");
+			System.out.println("[4] - Listar veiculos em estoque");
 			System.out.println("");
 			
 			
@@ -38,11 +38,11 @@ public class Main {
 				break;
 				
 			case 2:
-				Bacon.buscarVeiculo();
+				Bacon.localizarVeiculo();
 			case 3:
 				Bacon.pesquisarVeiculo();
 			case 4:
-				Bacon.listarVeiculos();
+				Bacon.imprimirVeiculos();
 				
 			}
 			

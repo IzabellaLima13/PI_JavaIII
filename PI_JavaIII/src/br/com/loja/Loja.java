@@ -15,7 +15,9 @@ public class Loja {
 		{
 			ArrayList<Veiculo> listaDeVeiculos = new ArrayList<>();
 		}
-		public void buscarVeiculo()
+		
+		
+		public void localizarVeiculo()
 		{
 			String aux = Auxiliar.addChassi();
 			
@@ -27,7 +29,7 @@ public class Loja {
 				}
 			}
 		}
-		public void listarVeiculos()
+		public void imprimirVeiculos()
 		{
 			for(Veiculo x : listaDeVeiculos)
 			{
@@ -61,15 +63,15 @@ public class Loja {
 			switch(opcao)
 			{
 			case 1:
-				abc.setMapa("TipoVeiculo", Auxiliar.addTipoVeiculo());break;
+				abc.setMapa("Tipo  de Veiculo", Auxiliar.addTipoVeiculo());break;
 			case 2:
-				abc.setMapa("CapTanque", Auxiliar.addCaptanque());break;
+				abc.setMapa("Capacidade de Tanque", Auxiliar.addCaptanque());break;
 			case 3:
 				abc.setMapa("Cilindrada", Auxiliar.addCilindrada());break;
 			case 4:
 				abc.setMapa("Cambio", Auxiliar.addCambio());break;
 			case 5:
-				abc.setMapa("Motorizacao", Auxiliar.addMotorizacao());break;
+				abc.setMapa("Motorização", Auxiliar.addMotorizacao());break;
 			case 6:
 				abc.setMapa("Cor", Auxiliar.addCor());break;
 			case 7:
@@ -77,11 +79,11 @@ public class Loja {
 			case 8:
 				abc.setMapa("Montadora", Auxiliar.addMontadora());break;
 			case 9:
-				abc.setMapa("Tipo", Auxiliar.addTipo());break;
+				abc.setMapa("Tipo de veiculo", Auxiliar.addTipo());break;
 			case 10:
-				abc.setMapa("Modelo", Auxiliar.addModelo());break;
+				abc.setMapa("Modelo de veiculo", Auxiliar.addModelo());break;
 			case 0:
-				System.out.println("Yippee ki-yay, motherfucker!");break;
+				System.out.println("Fim!");break;
 			default:
 				System.out.println("Opção inválida. Escolha uma das opções listadas.");
 				break;
